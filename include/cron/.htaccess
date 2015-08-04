@@ -1,3 +1,6 @@
-Order Deny,Allow
-Deny from all
-Allow from 81.177.139.112 #IP your server
+Options -Indexes
+<Files ~ "(\.tpl)|(\.php)$">
+    Order deny,allow
+    Allow from xx.xxx.xxx.xxx #IP your server
+    Deny from all
+</Files>
